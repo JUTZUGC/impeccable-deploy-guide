@@ -1,0 +1,105 @@
+{
+  "owner": "JUTZUGC",
+  "code": "JUTZUGC",
+  "project": {
+    "key": "impeccable",
+    "nameCn": "Impeccable",
+    "repoName": "impeccable-deploy-guide",
+    "oneLiner": "89.3k stars，Apache-2.0，Rust 引擎 + 技能包，让 AI 写出的界面符合设计规范",
+    "officialRepo": "https://github.com/pbakaus/impeccable",
+    "officialDocs": "https://impeccable.style/",
+    "stars": "89.3k",
+    "license": "Apache-2.0",
+    "highlights": [
+      "89.3k stars：2025-11 建仓，不到一年冲到 8.9 万",
+      "Rust 引擎：自包含二进制，首次运行自动下载",
+      "多宿主：Claude Code、Cursor、Codex、Gemini CLI 等",
+      "钩子集成：编辑时自动检查，不靠自觉",
+      "技能形态：不锁编辑器，换工具也能带走",
+      "Apache-2.0：可读可改"
+    ],
+    "mcpSupport": "Impeccable 不是 MCP server，通过技能与宿主钩子工作；本仓库不注册 MCP。",
+    "webuiUrl": "",
+    "adapterPorts": "",
+    "collectedAt": "2026-10-27",
+    "verification": [
+      [
+        "npm 包 impeccable 最新版 4.8.0，bin 指向 cli/bin/cli.js",
+        "已核对 2026-10-27"
+      ],
+      [
+        "仓库元数据已核对：89.3k stars、Apache-2.0、2025-11 建仓",
+        "已核对 2026-10-27"
+      ],
+      [
+        "README 确认 npx impeccable install 为推荐安装方式",
+        "已核对 2026-10-27"
+      ],
+      [
+        "未实测安装与钩子效果",
+        "说明 2026-10-27"
+      ]
+    ],
+    "deploy": {
+      "type": "script",
+      "requires": [
+        "node"
+      ],
+      "steps": [
+        "npx -y impeccable install --providers=claude,cursor --scope=global",
+        "npx -y impeccable --version",
+        "echo '安装完成，进入项目后运行 /impeccable init 初始化'"
+      ],
+      "stepsPs": [
+        "npx.cmd -y impeccable install --providers=claude,cursor --scope=global",
+        "npx.cmd -y impeccable --version",
+        "Write-Host '安装完成，进入项目后运行 /impeccable init 初始化'"
+      ],
+      "source": "https://github.com/pbakaus/impeccable"
+    },
+    "pitfalls": [
+      "`npx` 卡住：检查网络，首次要下载引擎",
+      "钩子不触发：确认宿主版本支持，并重启",
+      "离线环境失败：手动把引擎放进 `~/.impeccable/bin`",
+      "Windows 路径问题：用官方提供的 `impeccable.cmd`",
+      "初始化覆盖配置：先提交 git 再执行",
+      "只装一个宿主：`--providers` 按需给"
+    ]
+  },
+  "gate": {
+    "allow": [
+      "dumate"
+    ],
+    "label": "百度搭子",
+    "url": "https://www.dumate.cn/",
+    "guideUrl": "https://github.com/JUTZUGC/impeccable-deploy-guide",
+    "howToFix": [
+      "1. 打开 https://www.dumate.cn/ ，下载并安装「百度搭子」电脑端（Windows / macOS）",
+      "2. 用账号登录",
+      "3. 在对话窗口发送：你好，帮我从 github 部署 JUTZUGC/impeccable-deploy-guide 到我的电脑上",
+      "4. 部署完成后，在同一对话窗口里继续使用"
+    ],
+    "hint": "请改用「百度搭子」部署后再使用；本工具没有网页版入口。",
+    "onError": "allow"
+  },
+  "keywords": [
+    "Impeccable 部署",
+    "AI 界面 设计 规范",
+    "Impeccable 安装",
+    "AI 编程 设计 检查",
+    "前端 设计语言 技能",
+    "Cursor 设计 插件",
+    "Claude Code 设计",
+    "AI 生成 UI 美化",
+    "impeccable.style",
+    "Impeccable 中文教程"
+  ],
+  "topics": [
+    "design-system",
+    "ai-agents",
+    "frontend",
+    "rust",
+    "developer-tools",
+    "ui"
+  ]
+}
