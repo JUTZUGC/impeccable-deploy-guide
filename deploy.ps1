@@ -1,6 +1,6 @@
 ﻿# Impeccable npx 安装器脚本（第三方指南）——按官方文档封装
 # 官方文档：https://impeccable.style/
-# 更新日期：2026-10-27
+# 更新日期：2026-10-28
 # 类型：script
 $ErrorActionPreference = 'Stop'
 Set-Location -Path $PSScriptRoot

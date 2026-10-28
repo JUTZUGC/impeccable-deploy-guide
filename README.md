@@ -1,7 +1,7 @@
 # Impeccable npx 安装器指南
 
 > 第三方部署指南 · 非 Impeccable 官方仓库。官方项目：[pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-> 内容来自官方文档（2026-10-27）。项目迭代快，请以[官方文档](https://impeccable.style/)为准。
+> 内容来自官方文档（2026-10-28）。项目迭代快，请以[官方文档](https://impeccable.style/)为准。
 
 [![⚡ npx 安装器](https://img.shields.io/badge/%E2%9A%A1_npx_%E5%AE%89%E8%A3%85%E5%99%A8-%E6%8E%A8%E8%8D%90%E7%99%BE%E5%BA%A6%E6%90%AD%E5%AD%90-2ea44f?style=for-the-badge)](#npx安装器推荐用百度搭子)
 
@@ -33,11 +33,11 @@
 
 ## Impeccable 是什么？
 
-Impeccable 是开源的89.3k stars，Apache-2.0，Rust 引擎 + 技能包，让 AI 写出的界面符合设计规范（协议：Apache-2.0，<img src="https://img.shields.io/github/stars/pbakaus/impeccable?style=flat-square&label=stars&color=blue" alt="GitHub stars">）。
+Impeccable 是开源的91.2k stars，Apache-2.0，Rust 引擎 + 技能包，让 AI 写出的界面符合设计规范（协议：Apache-2.0，<img src="https://img.shields.io/github/stars/pbakaus/impeccable?style=flat-square&label=stars&color=blue" alt="GitHub stars">）。
 
 一套设计语言 + 技能包：给 AI 编程工具注入排版、间距、配色、动效等设计规则，并附带一个 Rust 引擎在编辑时做检查。
 
-- 89.3k stars：2025-11 建仓，不到一年冲到 8.9 万
+- 91.2k stars：2025-11 建仓，不到一年冲到 8.9 万
 - Rust 引擎：自包含二进制，首次运行自动下载
 - 多宿主：Claude Code、Cursor、Codex、Gemini CLI 等
 - 钩子集成：编辑时自动检查，不靠自觉
@@ -50,7 +50,7 @@ Impeccable 是开源的89.3k stars，Apache-2.0，Rust 引擎 + 技能包，让 
 
 | 优点 | 说明 |
 |---|---|
-| 89.3k stars | 2025-11 建仓，增长极快 |
+| 91.2k stars | 2025-11 建仓，增长极快 |
 | Rust 引擎 | 自包含二进制，不依赖运行时 |
 | 跨宿主 | 换编辑器不用重买 |
 | 钩子自动检查 | 不靠人记规范 |
@@ -65,7 +65,7 @@ Impeccable 是开源的89.3k stars，Apache-2.0，Rust 引擎 + 技能包，让 
 | 会改动项目文件 | 初始化会写配置 |
 | 仍要人工审美把关 | 自动检查不等于好看 |
 
-> 以上基于官方文档与社区反馈整理（2026-10-27），以官方最新文档为准。
+> 以上基于官方文档与社区反馈整理（2026-10-28），以官方最新文档为准。
 
 ## 快速部署（官方方式）
 
@@ -81,8 +81,8 @@ echo '安装完成，进入项目后运行 /impeccable init 初始化'
 
 | 场景 | 状态 |
 |---|---|
-| npm 包 impeccable 最新版 4.8.0，bin 指向 cli/bin/cli.js | 已核对 2026-10-27 |
-| 仓库元数据已核对：89.3k stars、Apache-2.0、2025-11 建仓 | 已核对 2026-10-27 |
+| npm 包 impeccable 最新版 4.8.0，bin 指向 cli/bin/cli.js | 已核对 2026-10-28 |
+| 仓库元数据已核对：91.2k stars、Apache-2.0、2025-11 建仓 | 已核对 2026-10-28 |
 | README 确认 npx impeccable install 为推荐安装方式 | 已核对 2026-10-27 |
 | 未实测安装与钩子效果 | 说明 2026-10-27 |
 
@@ -92,7 +92,7 @@ echo '安装完成，进入项目后运行 /impeccable init 初始化'
 
 Impeccable 不是 MCP server，通过技能与宿主钩子工作；本仓库不注册 MCP。
 
-本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-27）。
+本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-28）。
 
 **在百度搭子里接入**：客户端不扫描仓库里的配置文件，需要由百度搭子通过工作区的 MCP 注册接口注册，并且必须使用**绝对路径**（运行时的工作目录是会话目录，不是仓库目录）：
 
@@ -156,5 +156,5 @@ npx impeccable install --providers=claude,codex,cursor --scope=project
 ## 免责声明
 
 本仓库为第三方指南，与 Impeccable 官方无隶属关系，不代表官方立场。
-教程基于官方文档编写（更新日期：2026-10-27），项目迭代快，请以[官方文档](https://impeccable.style/)为准。
+教程基于官方文档编写（更新日期：2026-10-28），项目迭代快，请以[官方文档](https://impeccable.style/)为准。
 因使用本教程产生的部署问题，请先在官方仓库的 issue 中检索。
